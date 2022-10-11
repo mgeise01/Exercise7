@@ -1,5 +1,4 @@
 # Upload a sound file
-----
 Uploads a selected sound file to the user's profile.
 
 
