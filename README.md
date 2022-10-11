@@ -77,9 +77,9 @@ Accept: application/json
 Element | Description | Type | Notes
 ---|---|---|---
 **soundFiles** | List of sound file information | array | 
-  id | ID of the sound file | integer |
-  url | URL of the sound file | string | 
-  length | Length of the sound file | float | Length in seconds
+   id | ID of the sound file | integer |
+   url | URL of the sound file | string | 
+   length | Length of the sound file | float | Length in seconds
 
 ### Sample Response
 ```
