@@ -19,8 +19,8 @@ The sound file. Maximum length of the sound file is 5 minutes.
 `POST https://api.sounddate.com/profile/sound`
 
 ``
-Bearer: {Access token}
-Content-Type: audio/mpeg
+Bearer: {Access token}  
+Content-Type: audio/mpeg  
 Accept: application/json
 ``
 ``
