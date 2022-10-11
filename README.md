@@ -7,7 +7,7 @@ POST https://api.sounddate.com/profile/sound
 
 ## Headers
 | Header Name | Description | Required | Values |
-|---|---|---|---|
+|----------------|---|---|---|
 | **Bearer** | Access token | Required | See Authorization section |
 | **Content-Type** | Sound file format | Optional | Can be audio/mpeg for mp3 or audio/x-wav for wav. Default is audio/mpeg. |
 | **Accept** | Format of returned data | Optional | Can be application/xml or application/json. Default is JSON. |
@@ -47,7 +47,7 @@ where {user id} is the ID of the target user profile containing sound files.
 ## Query Parameters
 Parameter | Description | Type | Required | Notes |
 ---|---|---|---|---
-sortOrder | The order sound files are returned | string | Optional | Valid values: mostRecent, earliest, shortest, longest. Default is mostRecent |
+**sortOrder** | The order sound files are returned | string | Optional | Valid values: mostRecent, earliest, shortest, longest. Default is mostRecent |
 
 **Note**
 * **mostRecent**: Returns most recent sound file to the earliest.
@@ -64,7 +64,9 @@ Header Name | Description | Required | Values
 ## Sample Request
 GET https://api.sounddate.com/user/12345/profile/sound?sortOrder=earliest
 
+
 Bearer: {access token}
+
 Accept: application/json
 
 ## Response
@@ -77,18 +79,31 @@ Element | Description | Type | Notes
 
 ## Sample Response
 {
+
   "soundFiles": [
+
   {
+
     "id": 23456,
+
     "url": "https://api.sounddate.com/profile/sound/23456.mp3",
+
     "length": 11.2
+
   },
+
   {
+
     "id": 24559,
+
     "url": "https://api.sounddate.com/profile/sound/24559.mp3",
+
   "length": 19.8
+
   }
+
   ]
+
 }
 
 ## Status Codes and Errors
