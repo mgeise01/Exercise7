@@ -18,7 +18,8 @@ The sound file. Maximum length of the sound file is 5 minutes.
 ### Sample Request
 `POST https://api.sounddate.com/profile/sound`
 
-``Bearer: {Access token}
+``
+Bearer: {Access token}
 Content-Type: audio/mpeg
 Accept: application/json
 ``
@@ -33,7 +34,8 @@ Accept: application/json
 | **length** | Length of the new sound file | float | Length in seconds |
 
 ### Sample Response
-``{
+``
+{
   "id": 8746
   "length": 125.3
 }
@@ -45,8 +47,8 @@ Retrieves a list of profile sound URLs and lengths from a specific user.
 
 ### URL
 `Get https://api.sounddate.com/user/{user id}/profile/sound/`
-
-``where {user id} is the ID of the target user profile containing sound files.
+``
+where {user id} is the ID of the target user profile containing sound files.
 ``
 
 ### Query Parameters
@@ -69,7 +71,8 @@ Header Name | Description | Required | Values
 ### Sample Request
 `GET https://api.sounddate.com/user/12345/profile/sound?sortOrder=earliest`
 
-``Bearer: {access token}
+``
+Bearer: {access token}
 Accept: application/json
 ``
 
@@ -82,7 +85,8 @@ Element | Description | Type | Notes
   length | Length of the sound file | float | Length in seconds
 
 ### Sample Response
-``{
+``
+{
   "soundFiles": [
   {
     "id": 23456,
