@@ -16,17 +16,16 @@ Uploads a selected sound file to the user's profile.
 The sound file. Maximum length of the sound file is 5 minutes.
 
 ### Sample Request
-`POST https://api.sounddate.com/profile/sound`
+```
+POST https://api.sounddate.com/profile/sound`
 
-``
+
 Bearer: {Access token}  
 Content-Type: audio/mpeg  
 Accept: application/json
-``
-``
-{sound file}
-``
 
+{sound file}
+```
 ### Response
 | Element | Description | Type | Notes |
 |---|---|---|---|
