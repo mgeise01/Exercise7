@@ -40,7 +40,6 @@ Accept: application/json
 ```
 
 # Retrieve sound file list
----
 Retrieves a list of profile sound URLs and lengths from a specific user.
 
 ### URL
