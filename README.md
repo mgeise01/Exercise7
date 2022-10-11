@@ -17,8 +17,7 @@ The sound file. Maximum length of the sound file is 5 minutes.
 
 ### Sample Request
 ```
-POST https://api.sounddate.com/profile/sound`
-
+POST https://api.sounddate.com/profile/sound
 
 Bearer: {Access token}  
 Content-Type: audio/mpeg  
@@ -33,22 +32,22 @@ Accept: application/json
 | **length** | Length of the new sound file | float | Length in seconds |
 
 ### Sample Response
-``
+```
 {
   "id": 8746
   "length": 125.3
 }
-``
+```
 
 # Retrieve sound file list
 ---
 Retrieves a list of profile sound URLs and lengths from a specific user.
 
 ### URL
-`Get https://api.sounddate.com/user/{user id}/profile/sound/`
-``
+```
+Get https://api.sounddate.com/user/{user id}/profile/sound/
 where {user id} is the ID of the target user profile containing sound files.
-``
+```
 
 ### Query Parameters
 Parameter | Description | Type | Required | Notes |
@@ -68,12 +67,12 @@ Header Name | Description | Required | Values
 **Accept** | Format of returned data | Optional | Can be application/xml or application/json. Default is JSON.
 
 ### Sample Request
-`GET https://api.sounddate.com/user/12345/profile/sound?sortOrder=earliest`
+```
+GET https://api.sounddate.com/user/12345/profile/sound?sortOrder=earliest`
 
-``
 Bearer: {access token}
 Accept: application/json
-``
+```
 
 ### Response
 Element | Description | Type | Notes
@@ -84,7 +83,7 @@ Element | Description | Type | Notes
   length | Length of the sound file | float | Length in seconds
 
 ### Sample Response
-``
+```
 {
   "soundFiles": [
   {
@@ -99,7 +98,7 @@ Element | Description | Type | Notes
   }
   ]
 }
-``
+```
 
 ### Status Codes and Errors
 The following table lists the returned HTTP status codes.
