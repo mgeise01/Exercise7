@@ -68,7 +68,7 @@ Header Name | Description | Required | Values
 
 ### Sample Request
 ```
-GET https://api.sounddate.com/user/12345/profile/sound?sortOrder=earliest`
+GET https://api.sounddate.com/user/12345/profile/sound?sortOrder=earliest
 
 Bearer: {access token}
 Accept: application/json
