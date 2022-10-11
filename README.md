@@ -51,7 +51,7 @@ where {user id} is the ID of the target user profile containing sound files.
 ### Query Parameters
 Parameter | Description | Type | Required | Notes |
 ---|---|---|---|---
-**sortOrder** | The order sound files are returned | string | Optional | Valid values: mostRecent, earliest, shortest, longest. Default is mostRecent |
+**sortOrder** | The order sound files are returned | string | Optional | Valid values: mostRecent, earliest, shortest, longest. Default is mostRecent. |
 
 **Note**
 * **mostRecent**: Returns most recent sound file to the earliest.
