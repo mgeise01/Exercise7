@@ -3,7 +3,7 @@ Uploads a selected sound file to the user's profile.
 
 
 ## URL
-POST https://api.sounddate.com/profile/sound
+POST ht<span>tps://</span>api.sounddate.com/profile/sound
 
 ## Headers
 | Header Name | Description | Required | Values |
@@ -16,7 +16,7 @@ POST https://api.sounddate.com/profile/sound
 The sound file. Maximum length of the sound file is 5 minutes.
 
 ## Sample Request
-POST https://api.sounddate.com/profile/sound
+POST ht<span>tps://</span>api.sounddate.com/profile/sound
 
 Bearer: {Access token}
 Content-Type: audio/mpeg
@@ -41,7 +41,7 @@ Accept: application/json
 Retrieves a list of profile sound URLs and lengths from a specific user.
 
 ## URL
-Get https://api.sounddate.com/user/{user id}/profile/sound/
+Get ht<span>tps://</span>api.sounddate.com/user/{user id}/profile/sound/
 where {user id} is the ID of the target user profile containing sound files.
 
 ## Query Parameters
@@ -62,11 +62,10 @@ Header Name | Description | Required | Values
 **Accept** | Format of returned data | Optional | Can be application/xml or application/json. Default is JSON.
 
 ## Sample Request
-GET https://api.sounddate.com/user/12345/profile/sound?sortOrder=earliest
+GET ht<span>tps://</span>api.sounddate.com/user/12345/profile/sound?sortOrder=earliest
 
 
 Bearer: {access token}
-
 Accept: application/json
 
 ## Response
@@ -84,21 +83,21 @@ Element | Description | Type | Notes
 
   {
 
-    "id": 23456,
+  \  "id": 23456,
 
-    "url": "https://api.sounddate.com/profile/sound/23456.mp3",
+  \  "url": "ht<span>tps://</span>api.sounddate.com/profile/sound/23456.mp3",
 
-    "length": 11.2
+  \  "length": 11.2
 
   },
 
   {
 
-    "id": 24559,
+  \  "id": 24559,
 
-    "url": "https://api.sounddate.com/profile/sound/24559.mp3",
+  \  "url": "ht<span>tps://</span>api.sounddate.com/profile/sound/24559.mp3",
 
-  "length": 19.8
+  \  "length": 19.8
 
   }
 
