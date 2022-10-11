@@ -1,22 +1,22 @@
-## Upload a sound file
+# Upload a sound file
 ----
 Uploads a selected sound file to the user's profile.
 
 
-# URL
+## URL
 POST https://api.sounddate.com/profile/sound
 
-# Headers
+## Headers
 | Header Name | Description | Required | Values |
 |---|---|---|---|
 | **Bearer** | Access token | Required | See Authorization section |
 | **Content-Type** | Sound file format | Optional | Can be audio/mpeg for mp3 or audio/x-wav for wav. Default is audio/mpeg. |
 | **Accept** | Format of returned data | Optional | Can be application/xml or application/json. Default is JSON. |
 
-# POST Body
+## POST Body
 The sound file. Maximum length of the sound file is 5 minutes.
 
-# Sample Request
+## Sample Request
 POST https://api.sounddate.com/profile/sound
 
 Bearer: {Access token}
@@ -25,27 +25,27 @@ Accept: application/json
 
 {sound file}
 
-# Response
+## Response
 | Element | Description | Type | Notes |
 |---|---|---|---|
 | **id** | ID of the new sound file | integer | |
 | **length** | Length of the new sound file | float | Length in seconds |
 
-# Sample Response
+## Sample Response
 {
   "id": 8746
   "length": 125.3
 }
 
-## Retrieve sound file list
+# Retrieve sound file list
 ---
 Retrieves a list of profile sound URLs and lengths from a specific user.
 
-# URL
-Get https://api.sounddate.com/user/{user id}/profile/sound
+## URL
+Get https://api.sounddate.com/user/{user id}/profile/sound/
 where {user id} is the ID of the target user profile containing sound files.
 
-# Query Parameters
+## Query Parameters
 Parameter | Description | Type | Required | Notes |
 ---|---|---|---|---
 sortOrder | The order sound files are returned | string | Optional | Valid values: mostRecent, earliest, shortest, longest. Default is mostRecent |
@@ -56,19 +56,19 @@ sortOrder | The order sound files are returned | string | Optional | Valid value
 * **shortest**: Returns shortest length sound file to longest.
 * **longest**: Returns longest length sound file to shortest.
 
-# Headers
+## Headers
 Header Name | Description | Required | Values
 ---|---|---|---
 **Bearer** | Access token | Required | See Authorization section
 **Accept** | Format of returned data | Optional | Can be application/xml or application/json. Default is JSON.
 
-# Sample Request
+## Sample Request
 GET https://api.sounddate.com/user/12345/profile/sound?sortOrder=earliest
 
 Bearer: {access token}
 Accept: application/json
 
-# Response
+## Response
 Element | Description | Type | Notes
 ---|---|---|---
 **soundFiles** | List of sound file information | array | 
@@ -76,7 +76,7 @@ Element | Description | Type | Notes
   url | URL of the sound file | string | 
   length | Length of the sound file | float | Length in seconds
 
-# Sample Response
+## Sample Response
 {
   "soundFiles": [
   {
@@ -92,7 +92,7 @@ Element | Description | Type | Notes
   ]
 }
 
-# Status Codes and Errors
+## Status Codes and Errors
 The following table lists the returned HTTP status codes.
 
 Code | Description | Notes 
